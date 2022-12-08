@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>mohan</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    </head>
+    </head>
+    <body>
+        <a href="index4.html"> <img src="image.jpeg" width="150px" height="100px "></a>
+        <h2> Creating an object from a JSON String</h2>
+        <p id="moh"></p>
+        <script>
+            const txt='{"name":"chandu","age":20,"city":"New york"}'
+            const obj=JSON.parse*(txt);
+            document.getElementById("moh").innerHTML=obj.name;
+        </script>
+        <h2>Parsing a JSON Array</h2>
+        <p id="gag"></p>
+        <script>
+            const text='["ford","BMW","Audi","Fiat","Mahindra","Tata"]'
+            const myArr=JSON.parse(text);
+            document.getElementById("gag").innerHTML=myArr[4];
+        </script>
+       
+</body>
+</html>
